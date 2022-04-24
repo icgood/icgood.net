@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>
+			Ian Good -- Software Engineer
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+body { 
+	/* Generated with http://gradient.quasi.ink */
+	background-size: cover;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAsklEQVQIWwXBS07CQACA4X8AS4t9MOXRaEzc6MITwJIzsSWuTOAAxuMR2AA2trGP6dAWyPB9Yrb+NlWpGPkOU+lw2G/5eHvl5UmSZTFJkSLmmx9zjFPy6kytNVEY8Bz6WLQErkU4shHvy0/jyTGJvlCoEte2cbp96kohzA3RKMTsa2P8xyFJdub4l5L/Z1zqhkHg4kmP332MWKxXRsqI3fZEoq7oqmUynnDrdMm1wn7ocQdpBEm5KooDFQAAAABJRU5ErkJggg==");
+}
+
+.badgeBar {
+	width: 275px;
+	position: fixed;
+	left: 50%;
+	top: 0px;
+	bottom: 0px;
+
+	border-left-style: solid;
+	border-right-style: solid;
+	border-width: 2px;
+	border-color: black;
+
+	background-color: #f6f6f6;
+}
+
+.title {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	margin-top: 25pt;
+	text-align: center;
+	white-space: nowrap;
+	font-family: monospace;
+	color: #222222;
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+font.titleDeco {
+	color: #00AA00;
+	font-weight: normal;
+}
+
+.badgeBox {
+	top: 50%;
+	position: absolute;
+
+	width: 100%;
+	text-align: center;
+}
+
+.badge {
+	margin-top: 25pt;
+	margin-bottom: 25pt;
+	height: 1em;
+	clear: both;
+}
+
+body {
+	background-color: #222222;
+	color: white;
+}
+
+		</style>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+function positionBadgeBar() {
+  var bar = $('#badgeBar'),
+      box = $('#badgeBox');
+  bar.css('margin-left', -bar.width()/2);
+  box.css('margin-top', -box.height()/2);
+}
+
+$(document).ready(function () {
+  positionBadgeBar();
+});
+
+		</script>
+	</head>
+
+	<body>
+		<div id="badgeBar" class="badgeBar">
+			<div id="title" class="title"><font class="titleDeco">{</font>icgood<font class="titleDeco">}</font></div>
+			<div id="badgeBox" class="badgeBox">
+				<div id="linkedinBadge" class="badge"><a target="_blank" href="https://www.linkedin.com/in/icgood/"><img src="https://img.shields.io/badge/linkedin-icgood-blue.svg" alt="icgood on LinkedIn"></a></div>
+				<div id="githubBadge" class="badge"><a target="_blank" href="https://github.com/icgood"><img src="https://img.shields.io/badge/github-icgood-brightgreen.svg" alt="icgood on GitHub"></a></div>
+				<div id="twitterBadge" class="badge"><a target="_blank" href="https://twitter.com/icgood"><img src="https://img.shields.io/badge/twitter-icgood-00a4f9.svg" alt="icgood on Twitter"></a></div>
+				<!--<div id="keybaseBadge" class="badge"><a target="_blank" href="https://keybase.io/icgood"><img src="https://img.shields.io/badge/keybase-icgood-orange.svg" alt="icgood on Keybase.io"></a></div>-->
+			</div>
+		</div>
+	</body>
+</html>
